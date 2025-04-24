@@ -1,0 +1,10 @@
+import { mockDashboardData } from '../data/mockData';
+
+// In a real application, this would make API calls to the backend
+export const fetchDashboardData = async () => {
+  // Simulate API delay
+  await new Promise(resolve => setTimeout(resolve, 800));
+  
+  // Return mock data
+  return mockDashboardData;
+};
