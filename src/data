@@ -1,0 +1,178 @@
+// Mock data for the application
+// In a real application, this would come from API calls to your MySQL database
+
+// Dashboard data
+export const mockDashboardData = {
+  stats: {
+    revenue: 45250,
+    staffCount: 12,
+    orderCount: 327,
+    reservationCount: 92
+  },
+  salesData: {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+    revenue: [4200, 5800, 6300, 8200, 7100, 9200, 10500],
+    orders: [42, 53, 60, 78, 66, 95, 102]
+  },
+  categoryData: {
+    labels: ['Main Course', 'Appetizer', 'Dessert', 'Beverage', 'Side Dish'],
+    data: [45, 20, 15, 12, 8]
+  },
+  recentOrders: [
+    { id: 1, customer: 'John Doe', date: '2024-03-20', status: 'Completed', amount: 125.00 },
+    { id: 2, customer: 'Jane Smith', date: '2024-03-20', status: 'Preparing', amount: 78.50 },
+    { id: 3, customer: 'Robert Brown', date: '2024-03-19', status: 'Completed', amount: 94.00 },
+    { id: 4, customer: 'Emily Davis', date: '2024-03-19', status: 'Cancelled', amount: 45.25 },
+    { id: 5, customer: 'Michael Wilson', date: '2024-03-18', status: 'Completed', amount: 145.75 }
+  ]
+};
+
+// Staff data
+export const mockStaffData = [
+  {
+    id: 12,
+    first_name: 'Mark',
+    last_name: 'Smith',
+    date_of_birth: '1990-05-20',
+    age: 33,
+    gender: 'Male',
+    phone: '555-1234',
+    email: 'mark.smith@restaurant.com',
+    department: 'Kitchen',
+    position: 'Chef',
+    salary: 45000.00,
+    hire_date: '2023-02-01'
+  },
+  {
+    id: 13,
+    first_name: 'Sara',
+    last_name: 'Jones',
+    date_of_birth: '1995-08-14',
+    age: 28,
+    gender: 'Female',
+    phone: '555-5678',
+    email: 'sara.jones@restaurant.com',
+    department: 'Service',
+    position: 'Waitress',
+    salary: 30000.00,
+    hire_date: '2022-06-10'
+  },
+  {
+    id: 14,
+    first_name: 'David',
+    last_name: 'Thompson',
+    date_of_birth: '1988-03-10',
+    age: 35,
+    gender: 'Male',
+    phone: '555-9012',
+    email: 'david.thompson@restaurant.com',
+    department: 'Management',
+    position: 'Assistant Manager',
+    salary: 52000.00,
+    hire_date: '2021-11-15'
+  },
+  {
+    id: 15,
+    first_name: 'Linda',
+    last_name: 'Martinez',
+    date_of_birth: '1992-12-05',
+    age: 31,
+    gender: 'Female',
+    phone: '555-3456',
+    email: 'linda.martinez@restaurant.com',
+    department: 'Kitchen',
+    position: 'Sous Chef',
+    salary: 42000.00,
+    hire_date: '2022-09-01'
+  },
+  {
+    id: 16,
+    first_name: 'James',
+    last_name: 'Wilson',
+    date_of_birth: '1991-04-22',
+    age: 32,
+    gender: 'Male',
+    phone: '555-7890',
+    email: 'james.wilson@restaurant.com',
+    department: 'Service',
+    position: 'Bartender',
+    salary: 35000.00,
+    hire_date: '2023-01-10'
+  }
+];
+
+// Menu data
+export const mockMenuData = [
+  {
+    id: 101,
+    item_name: 'Grilled Chicken',
+    category: 'Main Course',
+    description: 'Tender grilled chicken breast with herb marinade, served with roasted vegetables and mashed potatoes.',
+    price: 15.99,
+    preparation_time: 20,
+    is_vegetarian: false,
+    is_vegan: false,
+    is_gluten_free: true,
+    availability: true
+  },
+  {
+    id: 102,
+    item_name: 'Vegetable Biryani',
+    category: 'Main Course',
+    description: 'Fragrant basmati rice cooked with mixed vegetables and aromatic spices.',
+    price: 12.99,
+    preparation_time: 25,
+    is_vegetarian: true,
+    is_vegan: true,
+    is_gluten_free: true,
+    availability: true
+  },
+  {
+    id: 103,
+    item_name: 'Classic Caesar Salad',
+    category: 'Appetizer',
+    description: 'Crisp romaine lettuce with Caesar dressing, parmesan cheese, and croutons.',
+    price: 8.99,
+    preparation_time: 10,
+    is_vegetarian: true,
+    is_vegan: false,
+    is_gluten_free: false,
+    availability: true
+  },
+  {
+    id: 104,
+    item_name: 'Chocolate Lava Cake',
+    category: 'Dessert',
+    description: 'Warm chocolate cake with a molten chocolate center, served with vanilla ice cream.',
+    price: 7.99,
+    preparation_time: 15,
+    is_vegetarian: true,
+    is_vegan: false,
+    is_gluten_free: false,
+    availability: true
+  },
+  {
+    id: 105,
+    item_name: 'Fresh Fruit Smoothie',
+    category: 'Beverage',
+    description: 'Blend of seasonal fruits with yogurt and honey.',
+    price: 5.99,
+    preparation_time: 5,
+    is_vegetarian: true,
+    is_vegan: false,
+    is_gluten_free: true,
+    availability: true
+  },
+  {
+    id: 106,
+    item_name: 'Garlic Bread',
+    category: 'Side Dish',
+    description: 'Toasted French bread with garlic butter and herbs.',
+    price: 3.99,
+    preparation_time: 8,
+    is_vegetarian: true,
+    is_vegan: false,
+    is_gluten_free: false,
+    availability: true
+  }
+];
